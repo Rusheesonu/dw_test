@@ -25,12 +25,24 @@ To Run the Project :
 
 - git clone
 - cd project folder
--- docker-compose up --build
+- docker-compose up --build
 
--
--
--
--
-- <img width="1559" alt="Screenshot 2023-12-17 at 16 13 25" src="https://github.com/Rusheesonu/dw_test/assets/23713918/5aa0605b-f582-4e2a-85fd-7a08c90c2a8e">
+# Availability Score Endpoint
+  
+  <img width="1559" alt="Screenshot 2023-12-17 at 16 13 25" src="https://github.com/Rusheesonu/dw_test/assets/23713918/5aa0605b-f582-4e2a-85fd-7a08c90c2a8e">
 
+
+# All Products View 
+
+  <img width="1557" alt="Screenshot 2023-12-17 at 15 50 07" src="https://github.com/Rusheesonu/dw_test/assets/23713918/02378ea1-8b3e-4c54-a425-d9ee0110ab58">
+
+# Sku Search View 
+
+  <img width="1561" alt="Screenshot 2023-12-17 at 16 11 28" src="https://github.com/Rusheesonu/dw_test/assets/23713918/2ab6fba9-11b7-4f79-b157-3bebf12b143e">
+
+# All Products Endpoint
+
+  <img width="1562" alt="Screenshot 2023-12-17 at 16 13 37" src="https://github.com/Rusheesonu/dw_test/assets/23713918/44306c50-c146-4b9a-a4d2-6d0c3bf34f38">
+
+  
 
