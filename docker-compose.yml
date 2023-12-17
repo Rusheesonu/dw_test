@@ -1,0 +1,40 @@
+version: '3'
+services:
+  first_script:
+    build:
+      context: /Users/rushi/Documents/DataWeave/
+      dockerfile: Dockerfile.producer
+    environment:
+      RABBITMQ_QUEUE: 'dw_queue'
+      RABBITMQ_URL: 'amqp://guest:guest@localhost:5672/'
+    # Add any additional configuration here (like volume mounts or environment variables)
+
+  second_script:
+    build:
+      context: /Users/rushi/Documents/DataWeave/
+      dockerfile: Dockerfile.consumer
+    # Set default environment variables if needed
+    environment:
+      RABBITMQ_HOST: host.docker.internal
+      RABBITMQ_PORT: 5672
+      POSTGRES_DB: 'dw_test'
+      POSTGRES_USER: 'postgres'
+      POSTGRES_PASSWORD: '1234'
+      POSTGRES_HOST: 'host.docker.internal'  # Change this to the correct PostgreSQL host
+      POSTGRES_PORT: '5432'
+      
+    # Add any additional configuration here
+
+  flask_app:
+    build:
+      context: /Users/rushi/Documents/DataWeave/
+      dockerfile: Dockerfile.app
+    ports:
+      - "8000:8000"  # Change the ports as needed for your Flask app
+    environment:
+      POSTGRES_DB: 'dw_test'
+      POSTGRES_USER: 'postgres'
+      POSTGRES_PASSWORD: '1234'
+      POSTGRES_HOST: 'host.docker.internal'  # Change this to the correct PostgreSQL host
+      POSTGRES_PORT: '5432'
+    # Add any additional configuration here

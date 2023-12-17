@@ -1,0 +1,23 @@
+# Use the Python 3.9 base image
+FROM python:3.9
+
+# Set the working directory inside the container
+WORKDIR /app
+
+# Set default environment variables if needed
+ENV RABBITMQ_HOST='host.docker.internal'
+ENV RABBITMQ_PORT='5672'
+ENV POSTGRES_DB='dw_test'
+ENV POSTGRES_USER='postgres'
+ENV POSTGRES_PASSWORD='1234'
+ENV POSTGRES_HOST='host.docker.internal' 
+ENV POSTGRES_PORT='5432'
+
+# Copy necessary files: consumer.py and requirements.txt
+COPY consumer.py requirements.txt ./
+
+# Install required Python packages
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Set the entry point for the container to run the consumer.py script
+CMD ["python", "consumer.py"]
