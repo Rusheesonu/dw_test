@@ -71,7 +71,7 @@ PriceInfo table: Holds the specific price information along with other metadata 
 
 By normalizing the data into different tables based on their distinct entities, it follows the principles of database normalization. 
 
-Benefits of the Chosen Structure:
+Why this Structure? 
 
 Data Consistency:
 
