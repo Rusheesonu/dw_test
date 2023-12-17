@@ -2,24 +2,24 @@
 
 #App 1 
 
-We have producer.py,  which takes any json file as input and sent RabbitMQ queue
+We have producer.py, which takes any json file as input and sends the data RabbitMQ queue
 
 #App 2
 
-We have a consumer.py , which takes the data from the quue and transports data to postgress DB.
+We have a consumer.py, which takes the data from the RabbitMQ queue and transports the data to postgress DB.
 
-ANd the Db schema and details are provided in test_db.sql
+And the Db schema and details are provided in test_db.sql
 
 #App 3 
 
 We have multiple api endpoints in Flask : 
 
-1. /view - simple UI to view all the information like all avaialble product jsons ,  can also filter on instock products , has a search bar to search products based on sku.
+1. /view - simple UI built to view all the information like all avaialble product jsons ,  can also filter on instock products , has a search bar to search products based on sku.
 2. /availability-score - shows availability score , total instock product count , total product count
 3. /products - displays all products
 
 
-Entire soulution is Dockerized
+Entire soulution is Dockerized.
 
 To Run the Project : 
 
