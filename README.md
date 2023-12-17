@@ -25,4 +25,12 @@ To Run the Project :
 
 - git clone
 - cd project folder
-- docker-compose up --build
+-- docker-compose up --build
+
+-
+-
+-
+-
+- <img width="1559" alt="Screenshot 2023-12-17 at 16 13 25" src="https://github.com/Rusheesonu/dw_test/assets/23713918/5aa0605b-f582-4e2a-85fd-7a08c90c2a8e">
+
+
